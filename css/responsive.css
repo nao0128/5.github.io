@@ -61,6 +61,11 @@ a:hover{
 
 header{
 	width: 100%;
+	height: 97px;
+	display: block;
+	position: fixed;
+	background: #fff;
+	z-index: 10;
 }
 
 .top_logo{
@@ -72,15 +77,70 @@ header{
 	justify-content: space-between;
 	margin: 0 auto;
 	padding: 30px 100px;
-
 }
 
-.res_navi,.res_hamburger{
+.header_warrap nav{
 	display: none;
 }
 
+.res_navi{
+	display: none;
+}
+
+
+/*-------------ハンバーガーメニュー----------------*/
+
+.hamburger{
+	display: block;
+	width: 97px;
+	height: 97px;
+	position: relative;
+	cursor: pointer;
+}
+
+.hamburger span{
+	height: 3px;
+	text-align: center;
+	background-color: var(--blue1);
+	width: 50px;
+	position: absolute;
+	left: 25px;
+	transition: 0.3s ease-in-out;
+}
+
+.hamburger span:first-child{
+	top: 0px;
+}
+
+.hamburger span:nth-child(2){
+	top:15px;
+}
+
+.hamburger span:last-child{
+	top:30px;
+}
+
+.hamburger.active span:first-child{
+	top: 30px;
+	left: 25px;
+	background: #fff;
+	transform: rotate(-45deg);
+}
+
+.hamburger.active span:nth-child(2),
+.hamburger.active span:last-child
+{
+	top: 30px;
+	background: #fff;
+	transform: rotate(45deg);
+}
+
+
+
+
 nav li{
 	margin-left: 25px;
+	font-weight: bold;
 }
 
 nav li a{
@@ -104,13 +164,25 @@ nav li a::after {
 		transform: scale(1, 1);     /*ホバー後、x軸方向に1（相対値）伸長*/
 		}
 
+.nav_mail{
+	position: relative;
+}
+
+.nav_mail img{
+	width: 60px;
+	height: auto;
+	position: absolute;
+	top: -18px;
+	left: 0;
+}
 
 /*-------------メインビジュアル----------------*/
 
 .mainvisual{
 	width: 100%;
 	background-color:var(--blue2);
-	padding: 70px 0;
+	padding:150px 0 70px 0;
+	
 }
 
 .mainvisual_title{
@@ -152,7 +224,7 @@ font-weight: bold;
 }
 /*-------------セクション1----------------*/
 .sec_1{
-	padding: 50px;
+	padding: 50px 0;
 }
 
 @keyframes infinity-scroll-left {
@@ -431,12 +503,6 @@ footer{
 	border-bottom: solid #000 1px;
 }
 
-.footer_list li::after{
-	content: '';
-	width: 20px;
-	height: 20px;
-
-}
 
 /*-------------ボタンアニメーション----------------*/
 .button-4{
@@ -504,7 +570,7 @@ footer{
 	width:200px;
 	height:70px;
 	left:-300px;
-	background:var(--blue1);
+	background-color:rgba(32,32,80,0.4);
 	position:absolute;
 	transition:all .5s ease;
 	z-index:1;
