@@ -1,0 +1,137 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>株式会社RISING INNOVATION – 株式会社RISING INNOVATION は人と未来をツナグ会社です。</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css" media="screen and (max-width:933px)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+<script src="js/jquery.inview.min.js"></script> 
+<script src="js/main.js"></script> 
+<script src="js/index.js"></script>
+</head>
+
+<body>
+<!---------------------ヘッダー------------------------->
+	<header>
+  <div class="flex header_warrap"> <a href="index.html#" class="top_logo">LOGO</a>
+    <nav>
+      <ul class="flex">
+        <li class="gnavi__list"><a class="gnavi__list_a">事業案内</a>
+		  <ul class="dropdown__lists">
+                <li class="dropdown__list"><a href="#">メニュー1</a></li>
+                <li class="dropdown__list"><a href="#">メニュー1</a></li>
+                <li class="dropdown__list"><a href="#">メニュー1</a></li>
+            </ul>
+			
+		  </li>
+        <li><a class="gnavi__list_a" href="company.html">会社概要</a></li>
+        <li><a class="gnavi__list_a">メンバー紹介</a></li>
+        <li><a class="gnavi__list_a" href="contact.html">お問い合わせ</a></li>
+        <li><a class="gnavi__list_a">BLOG</a></li>
+        <li class="nav_mail"><a><img src="img/icon_mail.png"></a></li>
+      </ul>
+    </nav>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </div>
+  <nav class="res_navi">
+    <li><a href="#">事業案内</a></li>
+    <li><a href="company.html">会社概要</a></li>
+    <li><a href="#">メンバー紹介</a></li>
+    <li><a href="contact.html">お問い合わせ</a></li>
+    <li><a href="#">BLOG</a></li>
+  </nav>
+</header>
+<!---------------------ヘッダー------------------------->	
+<main>
+	
+  <section class="conpany">
+    <div class="page_title">
+      <p class="page_title_en">CONTACT</p>
+      <h2 class="page_title_ja">お問合せ</h2>
+    </div>
+    <div class="company_warrap">
+      <div class="company_table_warrap">
+        <p class="table_title">お問合せ</p>
+        <form action= "<!--<?php echo esc_url( get_home_url() ); ?>/contactdone/-->" method="post">
+          <table class="contact-form">
+            <tr class="inquiry">
+              <th><p>お問合せ種別
+                <span class="required">必須
+                </span></p></th>
+              <td><label>
+                  <input type="radio" name="select" value="お問い合せ" checked="checked" />
+                  <span>お問い合せ</span></label>
+                <br>
+                <label>
+                  <input type="radio" name="select" value="資料請求" />
+                  <span>資料請求</span></label></td>
+            </tr>
+            <tr>
+              <th><p>お名前
+                <span class="required">必須
+                </spanp></p></th>
+              <td><input type="text" name="your-name" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="例）山田 太郎" required/></td>
+            </tr>
+            <tr>
+              <th><p>フリガナ
+                <span class="required">必須
+                </spanp></p></th>
+              <td><input type="text" name="your-furigana" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="例）ヤマダ タロウ" required/></td>
+            </tr>
+            <tr>
+              <th><p>電話番号</p></th>
+              <td><input type="tel" name="your-tel" value="" size="40" class="" aria-invalid="false" placeholder="例）050-0000-0000" /></td>
+            </tr>
+            <tr>
+              <th><p>メールアドレス
+                <span class="required">必須</p>
+                </spanp></th>
+              <td><input type="email" name="your-email" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="例）sample@torat.jp" required/></td>
+            </tr>
+            <tr>
+              <th><p>お問い合わせ内容
+                <span class="required">必須</p>
+                </spanp></th>
+              <td><textarea name="your-message" cols="40" rows="10" class="" aria-required="true" aria-invalid="false" placeholder="" required></textarea></td>
+            </tr>
+          </table>
+          
+          <p class="btn-check"><input type="checkbox" name="acceptance" value="1" aria-invalid="false" class="spam1" required/>&emsp;<a href=""><u>規約</u></a>に同意し、チェックを入れてください。<br />
+          <input type="submit" value="送信する" class="form_btn" id="formbtn" />
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+<!---------------------フッター------------------------->
+<footer>
+  <div class="flex jcsb footer_warrap">
+    <div> <a href="index.html#" class="top_logo">LOGO</a>
+      <ul class="addres">
+        <li>株式会社RISING INNOVATION</li>
+        <li>〒531-0072</li>
+        <li>大阪市北区豊崎3-15-5 TKビル2F</li>
+        <li>TEL：050-7586-3360</li>
+      </ul>
+    </div>
+    <div class="flex footer_list">
+      <ul>
+        <li><a>事業案内<img src="img/icon_arrow.png" class="arrow"></a></li>
+        <li><a href="company.html">会社概要<img src="img/icon_arrow.png" class="arrow"></a></li>
+        <li><a>メンバー紹介<img src="img/icon_arrow.png" class="arrow"></a></li>
+      </ul>
+      <ul>
+        <li><a href="contact.html">お問い合わせ<img src="img/icon_arrow.png" class="arrow"></a></li>
+        <li><a>BLOG<img src="img/icon_arrow.png" class="arrow"></a></li>
+      </ul>
+    </div>
+  </div>
+<small>Coryright(C) RISING INNOVATION Co., Ltd All Rights Reserced.</small>	
+</footer>
+<!---------------------フッター------------------------->
+</body>
+</html>
