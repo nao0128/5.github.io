@@ -21,6 +21,7 @@ a:hover {
   color: var(--blue1);
   cursor: pointer;
   opacity: .6;
+	transition: 0.5s;
 }
 .flex {
   display: flex;
@@ -51,7 +52,9 @@ header {
   position: fixed;
   background: #fff;
   z-index: 10;
+	/*box-shadow: 2px 2px 5px 2px rgba(97, 97, 156, 0.18);*/
 }
+
 .top_logo {
   font-size: 1.5rem;
   font-weight: 700;
@@ -70,20 +73,22 @@ nav li {
 }
 nav li a {
   position: relative;
+display: inline-block;	
+	height: 97px;
 }
-nav li a::after {
+.gnavi__list_a::after {
   position: absolute;
   left: 0;
   content: '';
   width: 100%;
   height: 3px;
   background: var(--blue1);
-  bottom: -43px;
+  bottom: 29px;
   transform: scale(0, 1);
   transform-origin: left top;
   transition: transform 0.3s;
 }
-nav li a:hover::after {
+.gnavi__list_a:hover::after {
   transform: scale(1, 1); /*ホバー後、x軸方向に1（相対値）伸長*/
 }
 .nav_mail {
@@ -96,11 +101,59 @@ nav li a:hover::after {
   top: -18px;
   left: 0;
 }
+
+/*-------------ドロップダウンリスト----------------*/
+
+.gnavi__list{
+	position: relative;
+}
+
+.dropdown__lists {
+    opacity: 0;
+	display: none;
+	direction: none;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: -90px;
+	transition: 0.3s;
+}
+.gnavi__list:hover .dropdown__lists {
+    opacity: 1;
+	display: block;
+}
+.dropdown__list {
+    background-color: var(--blue1);
+    width: 200px;
+	height: 50px;
+    transition: all .3s;
+    position: relative;
+	text-align: center;
+}
+.dropdown__list:not(:first-child)::before{
+    content: "";
+    width: 200px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.dropdown__list:hover {
+    background-color: #5252cc;
+}
+.dropdown__list a {
+    color: #fff;
+    text-decoration: none;
+	display: block;
+	padding-top: 13px;
+}
+
 /*-------------メインビジュアル----------------*/
 .mainvisual {
   width: 100%;
   background-color: var(--blue2);
-  padding: 150px 0 70px 0;
+  padding: 180px 0 70px 0;
 }
 .mainvisual_title {
   width: 90%;
@@ -375,12 +428,25 @@ footer {
 .footer_list li img {
   position: absolute;
   top: 0;
-  right: 5px;
+  right: 10px;
   bottom: 0;
   margin: auto;
   width: 16px;
   height: 16px;
+	transition: .3s ease-in-out;
 }
+
+.footer_list li:hover .arrow{
+	right: 0;
+}
+
+footer small{
+	display: block;
+	text-align: center;
+	margin-top: 100px;
+	color: gray;
+}
+
 /*-------------ボタンアニメーション----------------*/
 .button-4 {
   width: 200px;
@@ -458,3 +524,232 @@ footer {
 .button-5:hover a {
   color: #fff;
 }
+
+/*--------------パンくずリスト---------------*/
+
+.breadcrumb{
+	
+}
+
+/*--------------会社情報---------------*/
+/*--------------お問合せ---------------*/
+
+.conpany{
+	margin: 0 auto;
+	
+}
+
+.company_warrap{
+	width: 100%;
+	padding: 50px 0;
+	background-color: var(--blue2);
+}
+
+.company_table_warrap{
+	width: 85%;
+	margin: 0 auto;
+}
+
+.page_title{
+	padding: 260px 0 70px 0;
+	margin: 0 auto;
+	width: 80%;
+}
+
+.page_title_en{
+	
+	font-weight: bold;
+	font-size: 4em;
+	line-height: 0.7em;
+	color: var(--blue1);
+}
+
+.page_title_ja{
+	color: var(--blue1);
+	
+}
+
+.table_title{
+	font-weight: bold;
+	font-size: 2.0em;
+	color: var(--blue1);
+}
+
+.company_warrap{
+	padding-bottom: 70px;
+}
+
+.company_table,.contact-form{
+	width: 85%;
+	margin: 50px auto;
+}
+
+
+.company_table ,.company_table td,.company_table th,
+.contact-form ,.contact-form td,.contact-form th{
+	border: 3px solid var(--blue2);
+	border-collapse: collapse;
+}
+
+.company_table{
+	margin-top: 50px;
+}
+
+.company_table tr,.contact-form tr{
+	width: 70px;
+	height: 25px;
+}
+
+.company_table td,.company_table th,
+.contact-form td,.contact-form th{
+	padding: 30px 50px;
+	
+}
+.company_table th,
+.contact-form th{
+	background-color: var(--blue1);
+	color: #fff;
+	width: 150px;
+}
+
+.company_table td,
+.contact-form td{
+	background-color: #fff;
+}
+
+.form_btn{
+	width: 200px;
+	padding: 20px;
+	border: none;
+	background: var(--blue1);
+	color: #fff;
+	margin: 40px auto;
+	display: block;
+	font-size: 1.0em;
+	font-weight: bold;
+}
+
+.required{
+	font-size: 0.8em;
+	display: inline-block;
+	background-color: red;
+	color: #fff;
+	padding: 3px 0;
+	width: 50px;
+	margin: 5px auto;
+}
+
+.btn-check{
+	text-align: center;
+	margin-top: 25px;
+	font-size: 1.0em;
+}
+
+.inquiry input{
+	
+}
+
+
+
+textarea,
+.contact-form input[type='text'],
+.contact-form input[type='email'],
+.contact-form input[type='tel']{
+	font: 15px/24px sans-serif;
+	width: 100%;
+	border: 0;
+}
+
+/*-------------ローディングアニメーション----------------*/
+
+.loding{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #fff;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.configure-border-1 {
+  width: 115px;
+  height: 115px;
+  padding: 3px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--blue2);
+  animation: configure-clockwise 4s ease-in-out 0s infinite alternate;
+	top: 400px;
+	right: 0;
+	left: 0;
+	border-bottom: 0;
+	margin: auto;
+		
+}
+
+.configure-border-2 {
+  width: 115px;
+  height: 115px;
+  padding: 3px;
+position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--blue2);
+  transform: rotate(45deg);
+  animation: configure-xclockwise 4s ease-in-out 0s infinite alternate;
+	top: 400px;
+	right: 0;
+	left: 0;
+	border-bottom: 0;
+	margin: auto;
+}
+
+.configure-core {
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+}
+
+@keyframes configure-clockwise {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes configure-xclockwise {
+  0% {
+    transform: rotate(45deg);
+  }
+  25% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(-135deg);
+  }
+  75% {
+    transform: rotate(-225deg);
+  }
+  100% {
+    transform: rotate(-315deg);
+  }
+}
+
+
+
