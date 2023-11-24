@@ -4,10 +4,13 @@
 <meta charset="utf-8">
 <title>株式会社RISING INNOVATION – 株式会社RISING INNOVATION は人と未来をツナグ会社です。</title>
 <link rel="stylesheet" href="css/style.css">
-<!-- <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width:933px)"> -->
+<link rel="stylesheet" href="css/responsive.css" media="screen and (max-width:933px)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 <script src="js/jquery.inview.min.js"></script> 
 <script src="js/main.js"></script> 
@@ -26,28 +29,36 @@
 </div>
 </div>	
 <header>
-  <div class="flex header_warrap"> <a href="index.html#" class="top_logo">LOGO</a>
+  <div class="flex header_warrap"> <a href="index.html#" class="top_logo"><img src="img/logo.png" alt="株式会社ライジングイノベーション"></a>
     <nav>
       <ul class="flex">
-        <li class="gnavi__list"><a class="gnavi__list_a">事業案内</a>
+        <li class="gnavi__list"><a class="gnavi__list_a" href="index.html#sec_2">サービス</a>
 		  <ul class="dropdown__lists">
                 <li class="dropdown__list"><a href="#">メニュー1</a></li>
                 <li class="dropdown__list"><a href="#">メニュー1</a></li>
                 <li class="dropdown__list"><a href="#">メニュー1</a></li>
+			  <li class="dropdown__list"><a href="#">メニュー1</a></li>
+			  <li class="dropdown__list"><a href="#">メニュー1</a></li>
             </ul>
 			
 		  </li>
-        <li><a class="gnavi__list_a" href="company.html">会社概要</a></li>
-        <li><a class="gnavi__list_a">メンバー紹介</a></li>
+        <li class="gnavi__list"><a class="gnavi__list_a" href="#">ミッション</a>
+        <ul class="dropdown__lists">
+          <li class="dropdown__list"><a href="company.html">会社情報</a></li>
+          <li class="dropdown__list"><a href="company.html#member">メンバー紹介</a></li>
+      </ul>
+    </li>
+    <li><a class="gnavi__list_a" href="#">実績</a></li>
         <li><a class="gnavi__list_a" href="contact.html">お問い合わせ</a></li>
         <li><a class="gnavi__list_a">BLOG</a></li>
-        <li class="nav_mail"><a><img src="img/icon_mail.png"></a></li>
+        <!-- <li class="nav_mail"><a><img src="img/icon_mail.png"></a></li> -->
       </ul>
     </nav>
     <div class="hamburger"><span></span><span></span><span></span></div>
   </div>
   <nav class="res_navi">
     <li><a href="#">事業案内</a></li>
+    <li><a href="#">実績</a></li>
     <li><a href="company.html">会社概要</a></li>
     <li><a href="#">メンバー紹介</a></li>
     <li><a href="contact.html">お問い合わせ</a></li>
@@ -94,64 +105,75 @@
       </ul>
     </div>
   </div>
+  <div  id="sec_2"></div>
 </section>
-<!---------------セクション2------------------>
+<!---------------事業内容------------------>
 <section class="sec_2">
   <div class="flex jcsb">
     <div class="sec_title">
-      <p class="sec_title_1">TEXTTEXT</p>
-      <p class="sec_title_2">テキスト</p>
+      <p class="sec_title_1">SERVICES</p>
+      <p class="sec_title_2">事業内容</p>
       <br>
-      <div class="button-4">
+      <!-- <div class="button-4">
         <div class="eff-4"></div>
-        <a href="#"> TEXTTEXT </a> </div>
+        <a href="#">サービス一覧</a></div> -->
     </div>
     <div class="sec_text">
       <h2>TEXTTEXTTEXTTEXT<br>
         TEXTTEXTTEXTTEXTTEXTTEXT<br>
         TEXTTEXTTEXTTEXT</h2>
-      <p>TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT<br>
-        TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT<br>
-        TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT<br>
-        TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT</p>
+      <p>TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT<br>
+        TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT<br>
+        TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT<br>
+        TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT</p>
     </div>
   </div>
+  
+  <ul class="services_list flex">
+    <li><a href=""><img src="img/image.png" /></a></li>
+    <li><a href=""><img src="img/image.png" /></a></li>
+    <li><a href=""><img src="img/image.png" /></a></li>
+    <li><a href=""><img src="img/image.png" /></a></li>
+    <li><a href=""><img src="img/image.png" /></a></li>
+  </ul>
+	<div class="button-2">
+        <div class="eff-2"></div>
+        <a href="#"> サービス一覧 </a> </div>
 </section>
-<div class="sec_2_img"><img src="img/image.png"></div>
+<div class="sec_2_img"><img src="img/insert_img.png"></div>
 
 <!---------------セクション3------------------>
 <section class="sec_3">
+<div class="sec_3_warrap">	
   <div class="sec_title title_sec3 fl">
-    <p class="sec_title_1">TEXTTEXT</p>
-    <p class="sec_title_2">テキスト</p>
+    <p class="sec_title_1">MISSION</p>
+    <p class="sec_title_2">ライジングイノベーションについて</p>
     <br>
     <div class="button-4">
       <div class="eff-4"></div>
-      <a href="#"> TEXTTEXT </a> </div>
+      <a href="company.html"> 会社概要 </a> </div>
   </div>
   <div class="fr sec_3_contents">
     <div class="sec_3_content">
-      <div class="sec_3_img"><img src="img/image.png"></div>
+      <div class="sec_3_img"><img src="img/misson_img.png"></div>
       <p><span>TEXTTEXT</span></p>
       <h3>テキストテキスト</h3>
-      <p>テキストテキストテキストテキスト</p>
-    </div>
-    <div class="sec_3_content">
-      <div class="sec_3_img"><img src="img/image.png"></div>
-      <p><span>TEXTTEXT</span></p>
-      <h3>テキストテキスト</h3>
-      <p>テキストテキストテキストテキスト</p>
+      <p>テキストテキストテキストテキストテキストテキストテキストテキスト<br>
+        テキストテキストテキストテキストテキストテキストテキストテキスト<br>
+        テキストテキストテキストテキストテキストテキストテキストテキスト<br>
+        テキストテキストテキストテキストテキストテキストテキストテキスト<br></p>
     </div>
   </div>
   <div class="clear"></div>
+</div>	
 </section>
-<!---------------セクション4------------------>
+<!---------------過去の実績------------------>
 <section class="sec_4">
   <div class="sec_4_warrap">
     <div class="sec_title">
-      <p class="sec_title_1">TEXTTEXT</p>
-      <p class="sec_title_2">テキスト</p>
-      <p>テキストテキストテキストテキストテキストテキストテキスト</p>
+      <p class="sec_title_1">ACHIEVEMENTS</p>
+      <p class="sec_title_2">過去の実績</p>
+      <!-- <p>テキストテキストテキストテキストテキストテキストテキスト</p> -->
     </div>
     <div class="flex mt_1">
       <section class="sec_4_contents">
@@ -179,23 +201,57 @@
     </div>
   </div>
 </section>
+<!---------------ブログ------------------>
+<section class="sec_5">
+  <div class="sec_5_warrap">
+    <div class="sec_title">
+      <p class="sec_title_1">BLOG</p>
+      <p class="sec_title_2">ブログ</p>
+      <!-- <p>テキストテキストテキストテキストテキストテキストテキスト</p> -->
+    </div>
+    <div class="flex mt_1">
+      <section class="sec_5_contents">
+        <div class="hover-img"> <img src="img/image.png" alt=""> </div>
+        <div class="hover-text">
+          <p class="text1">TEXT</p>
+        </div>
+        <ul>
+          <li>テキストテキストテキストテキスト</li>
+          <li>テキストテキストテキストテキスト</li>
+          <li>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
+        </ul>
+      </section>
+      <section class="sec_5_contents">
+        <div class="hover-img"> <img src="img/image.png" alt=""> </div>
+        <div class="hover-text">
+          <p class="text1">TEXT</p>
+        </div>
+        <ul>
+          <li>テキストテキストテキストテキスト</li>
+          <li>テキストテキストテキストテキスト</li>
+          <li>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</section>
 
 <!---------------コンタクト------------------>
 <section class="contact">
   <div class="contact_title">
-    <p class="sec_title_1">TEXTTEXT</p>
-    <p class="sec_title_2">テキスト</p>
+    <p class="contact_title_1">CONTACT</p>
+    <p class="contact_title_2">お問い合わせ</p>
     <br>
     <div class="button-5">
       <div class="eff-5"></div>
-      <a href="#"> TEXTTEXT </a> </div>
+      <a href="contact.html"> お問い合わせページ </a> </div>
   </div>
 </section>
 
-	
+<!---------------フッター------------------>	
 <footer>
   <div class="flex jcsb footer_warrap">
-    <div> <a href="#" class="top_logo">LOGO</a>
+    <div> <a href="#" class="top_logo"><img src="logo" alt=""></a>
       <ul class="addres">
         <li>株式会社RISING INNOVATION</li>
         <li>〒531-0072</li>

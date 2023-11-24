@@ -3,10 +3,13 @@
 <meta charset="utf-8">
 <title>株式会社RISING INNOVATION – 株式会社RISING INNOVATION は人と未来をツナグ会社です。</title>
 <link rel="stylesheet" href="css/style.css">
-<!-- <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width:933px)"> -->
+<link rel="stylesheet" href="css/responsive.css" media="screen and (max-width:933px)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 <script src="js/jquery.inview.min.js"></script> 
 <script src="js/main.js"></script> 
@@ -15,7 +18,7 @@
 
 <body>
 <!---------------------ヘッダー------------------------->	
-	<header>
+	<!-- <header>
   <div class="flex header_warrap"> <a href="index.html#" class="top_logo">LOGO</a>
     <nav>
       <ul class="flex">
@@ -43,18 +46,21 @@
     <li><a href="contact.html">お問い合わせ</a></li>
     <li><a href="#">BLOG</a></li>
   </nav>
-</header>
+</header> -->
 <!---------------------ヘッダー------------------------->	
 <main>
   <section class="conpany">
+	 <div class="page_title_warrap"> 
     <div class="page_title">
       <p class="page_title_en">COMPANY</p>
       <h2 class="page_title_ja">会社情報</h2>
     </div>
+		</div> 
+    <!---------------------会社情報------------------------->	
     <div class="company_warrap">
       <div class="company_table_warrap">
-        <p class="table_title">会社情報</p>
-        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        <!--<p class="table_title">会社情報</p>-->
+        <!--<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>-->
         <table class="company_table">
           <tr>
             <th>会社名</th>
@@ -105,8 +111,52 @@
           </tr>
         </table>
       </div>
-    </div>
+   
   </section>
+ <!---------------------メンバー紹介------------------------->
+ <section class="member" id="member">
+  <div class="page_title2">
+    <p class="page_title_en">MEMBERS</p>
+    <h2 class="page_title_ja">メンバー紹介</h2>
+  </div>
+ <div class="member_warrap"> 
+<div class="ceo flex">
+  <div class="ceo_img"><img src="img/image.png" /></div>
+  <div class="ceo_text">
+  <h2>SHUN YAMAMOTO<br>
+  <span class="ceo_post">代表取締役社長</span>
+  </h2><br>
+  <ul>
+    <li>PM（プロジェクトマネージャー）</li>
+    <li>セールスディレクター</li>
+    <li>セールスコンサルタント</li>
+    <li>SV (スーパーバイザー)</li>
+    <li>営業戦略構築</li>
+  </ul><br>
+  <p>「伴走型の営業支援」をモットーにクライアント様と共に新規開拓や販路拡大を目指す営業スタイルでご支援させて頂きます。一番は不安を感じさせない事、ブラックボックス化をしない可視化した管理体制の元、他力本願ではなく寄り添いながら共にクライアント様の営業チームとして、稼働する事をお約束致します。山本社長にお願いして良かったと、言って頂けるように努めて参ります。 些細な事でも結構です。アウトバウンド営業でお困りであればお気軽にご相談ください。</p>  
+  </div>
+</div>
+  <ul class="staff flex">
+    <li>
+      <div class="staff_img"><img src="img/image.png" /></div><br>
+      <p class="post">セールス事業部 営業統括責任者</p>
+      <p class="staff_name">Hayato Ooishi</p>
+    </li>
+    <li>
+      <div class="staff_img"><img src="img/image.png" /></div><br>
+      <p class="post">セールス事業部チームサブディレクター</p>
+      <p class="staff_name">Sayaka Yata</p>
+    </li>
+    <li>
+      <div class="staff_img"><img src="img/image.png" /></div><br>
+      <p class="post">マーケティング事業部 責任者</p>
+      <p class="staff_name">Tomoki Isoyama</p>
+    </li>
+
+  </ul>
+
+</div>
+ </section>	 
 </main>
 <!---------------------フッター------------------------->	
 	<footer>
