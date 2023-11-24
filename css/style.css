@@ -1,7 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
 htmal {
-  font-size: 100%;
+font-size: 100%;
+
 }
 * {
   margin: 0;
@@ -9,13 +10,15 @@ htmal {
 }
 body {
   width: 100%;
+	font-family: 'Noto Sans JP', sans-serif;
+	color: var(--gray);
 }
 li {
   list-style: none;
 }
 a {
   text-decoration: none;
-  color: var(--blue1);
+  color: var(--gray);
 }
 a:hover {
   color: var(--blue1);
@@ -29,11 +32,17 @@ a:hover {
 .jcsb {
   justify-content: space-between;
 }
+
+.jcc{
+  justify-content: center;
+}
+
 :root {
-  --gold: #a88d3f;
-  --blue1: #202050;
-  --blue2: #f4f9ff;
-  ;
+  --gold: #E8BE00;
+  --blue1: #120D69;
+  --blue2: #efefff;
+	--blue3:#285ac8;
+	--gray:#2D2D2D;
 }
 .fl {
   float: left;
@@ -52,12 +61,14 @@ header {
   position: fixed;
   background: #fff;
   z-index: 10;
-	/*box-shadow: 2px 2px 5px 2px rgba(97, 97, 156, 0.18);*/
+
+	box-shadow: 2px 2px 5px 2px rgba(97, 97, 156, 0.18);
 }
 
-.top_logo {
-  font-size: 1.5rem;
-  font-weight: 700;
+.top_logo img {
+  width: 80px;
+  height: auto;
+  margin-top: -25px;
 }
 .header_warrap {
   justify-content: space-between;
@@ -75,6 +86,7 @@ nav li a {
   position: relative;
 display: inline-block;	
 	height: 97px;
+  color: var(--blue1);
 }
 .gnavi__list_a::after {
   position: absolute;
@@ -82,7 +94,7 @@ display: inline-block;
   content: '';
   width: 100%;
   height: 3px;
-  background: var(--blue1);
+  background: var(--blue3);
   bottom: 29px;
   transform: scale(0, 1);
   transform-origin: left top;
@@ -123,7 +135,7 @@ display: inline-block;
 	display: block;
 }
 .dropdown__list {
-    background-color: var(--blue1);
+    background-color: var(--blue3);
     width: 200px;
 	height: 50px;
     transition: all .3s;
@@ -140,7 +152,8 @@ display: inline-block;
     left: 0;
 }
 .dropdown__list:hover {
-    background-color: #5252cc;
+    background-color: #fff;
+	
 }
 .dropdown__list a {
     color: #fff;
@@ -149,10 +162,19 @@ display: inline-block;
 	padding-top: 13px;
 }
 
+.dropdown__list a:hover{
+color: var(--blue1);
+	opacity: 1;
+}
+
 /*-------------メインビジュアル----------------*/
 .mainvisual {
   width: 100%;
   background-color: var(--blue2);
+/*	background-image: url("file:///C:/Users/kameokna/Desktop/%E7%B7%B4%E7%BF%92%E3%81%BE%E3%81%A8%E3%82%81/%E7%B7%B4%E7%BF%928/img/mainvisual.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;*/
   padding: 180px 0 70px 0;
 }
 .mainvisual_title {
@@ -162,6 +184,7 @@ display: inline-block;
 .mainvisual_title h1 {
   margin-bottom: 25px;
   font-size: 3rem;
+  color: var(--blue3);
 }
 .mainvisual_title span {
   color: var(--gold);
@@ -178,15 +201,15 @@ display: inline-block;
 }
 .top_btn_1 {
   color: #fff;
-  background-color: var(--blue1);
+  background-color: var(--blue3);
   margin-right: 15px;
 }
 .top_btn_2 {
-  color: var(--blue1);
+  color: var(--blue3);
   background-color: #fff;
-  border: solid 3px var(--blue1);
+  border: solid 3px var(--blue3);
 }
-/*-------------セクション1----------------*/
+/*-------------TOP企業ロゴ----------------*/
 .sec_1 {
   padding: 50px 0;
 }
@@ -216,23 +239,26 @@ display: inline-block;
 .scroll-infinity__item > img {
   width: 100%;
 }
-/*-------------セクション2----------------*/
+/*-------------TOPサービス事業内容----------------*/
 .sec_2 {
-  width: 85%;
+  width: 75%;
   margin: 0 auto;
   padding: 70px 0;
+	
 }
 .sec_title p {
-  color: var(--blue1);
+  
   font-weight: bold;
   line-height: 1.3em;
 }
 .sec_title_1 {
   font-size: 3rem;
-  margin-right: 20px;
+  margin-right: 50px;
+	color: var(--blue3);
 }
 .sec_title_2 {
   font-size: 1.3rem;
+	color: var(--blue3);
 }
 .sec_text p {
   line-height: 2.0em;
@@ -240,6 +266,7 @@ display: inline-block;
 .sec_text h2 {
   font-size: 2em;
   margin-bottom: 20px;
+  color: var(--blue1);
 }
 .sec_btn {
   text-align: center;
@@ -252,9 +279,10 @@ display: inline-block;
 .sec_2_img {
   width: 100%;
   height: 250px;
-  background-color: #fff;
-  border: solid 1px var(--blue1);
+  /* border: solid 1px var(--blue1); */
   position: relative;
+  overflow: hidden;
+  margin:90px 0 30px 0;
 }
 .sec_2_img img {
   position: absolute;
@@ -264,19 +292,51 @@ display: inline-block;
   left: 0;
   margin: auto;
 }
-/*-------------セクション3----------------*/
-.sec_3 {
-  width: 85%;
+
+.services_list_title{
+  width: 400px;
+  background-color: var(--blue1);
   margin: 0 auto;
-  padding: 70px 0;
+  color: #fff;
+  font-weight: bold;
+  padding: 15px;
+text-align: center;
+margin-top: 70px;
+	display: block;
 }
+
+.services_list{
+  margin-top:50px;
+  flex-wrap: wrap;
+}
+
+.services_list li{
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/*-------------TOPミッション会社情報----------------*/
+.sec_3 {
+  width: 100%;
+  margin: 0 auto;
+  padding: 150px 0 100px 0;
+	/*background-color: var(--blue2);*/
+	
+}
+
+.sec_3_warrap{
+	width: 75%;
+	margin: 0 auto;
+}
+
+
 .title_sec3 {
-  margin-right: 50px;
+  margin-right: 40px;
   margin-bottom: 50px;
   min-width: 300px;
 }
 .sec_3_contents {
-  width: 55%;
+  width: 60%;
 }
 .sec_3_content {
   margin-bottom: 25px;
@@ -285,7 +345,6 @@ display: inline-block;
   font-weight: bold;
   font-size: 1.5rem;
   color: var(--blue1);
-  opacity: .7;
 }
 .sec_3_content h3 {
   font-size: 1.5rem;
@@ -294,13 +353,14 @@ display: inline-block;
 .sec_3_img {
   width: 100%;
   height: 250px;
-  background-color: #fff;
-  border: solid var(--blue1) 1px;
+  /*border: solid var(--blue1) 1px;*/
   /* background-image: ;
 	background-position: center;
 	background-repeat: no-repeat; */
   margin-bottom: 10px;
   position: relative;
+	overflow: hidden;
+	
 }
 .sec_3_img img {
   position: absolute;
@@ -310,15 +370,15 @@ display: inline-block;
   left: 0;
   margin: auto;
 }
-/*-------------セクション4----------------*/
+/*-------------TOP実績ACHIEVEMENTS----------------*/
 .sec_4 {
   width: 100%;
   margin: 0 auto;
-  padding: 150px 0 300px 0;
-  background-color: var(--blue2);
+  padding: 100px 0 300px 0;
+  
 }
 .sec_4_warrap {
-  width: 90%;
+  width: 75%;
   margin: 0 auto;
 }
 .sec_4_img {
@@ -338,7 +398,7 @@ display: inline-block;
   padding: 20px;
 }
 .sec_4_contents li:first-child {
-  background-color: var(--blue1);
+  background-color: var(--gold);
   text-align: center;
   color: #fff;
   border-radius: 50px;
@@ -384,17 +444,105 @@ display: inline-block;
 .mt_1 {
   margin-top: 50px;
 }
-/*-------------コンタクト----------------*/
+/*-------------TOPブログ----------------*/
+.sec_5 {
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 0 300px 0;
+	/*background-color: var(--blue2);*/
+  
+}
+.sec_5_warrap {
+  width: 75%;
+  margin: 0 auto;
+}
+.sec_5_img {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+}
+.sec_5_contents {
+  position: relative;
+  width: 320px;
+  height: 213px;
+  margin-right: 20px;
+  background-color: #fff;
+}
+.sec_5_contents ul {
+  background-color: #fff;
+  padding: 20px;
+}
+.sec_5_contents li:first-child {
+  background-color: var(--gold);
+  text-align: center;
+  color: #fff;
+  border-radius: 50px;
+  margin: 10px 0;
+	padding: 5px 0;
+}
+
+.sec_5_contents li:nth-child(2){
+	font-weight: bold;
+}
+
+.sec_5_contents li:last-child{
+	line-height: 1.8em;
+} 
+
+
+.sec_5_contents .hover-img {
+  margin: 0;
+  padding: 0;
+}
+.hover-img img {
+  width: 100%;
+  height: 100%;
+}
+.sec_5_contents .hover-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.65);
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+.sec_5_contents .hover-text .text1 {
+  font-size: 22px;
+  padding: 20px;
+}
+.sec_5_contents:hover .hover-text {
+  opacity: 1;
+}
+.mt_1 {
+  margin-top: 50px;
+}
+/*-------------TOPコンタクト----------------*/
 .contact {
   width: 100%;
-  background-color: var(--blue1);
+	background-color: var(--blue1);
+  /*background-image: url("file:///C:/Users/kameokna/Desktop/%E7%B7%B4%E7%BF%92%E3%81%BE%E3%81%A8%E3%82%81/%E7%B7%B4%E7%BF%928/img/contact_img.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;*/
   padding: 120px 0;
 }
-.contact_title {
-  color: #fff;
+
+.contact_title_1 {
+  font-size: 3rem;
+  margin-right: 20px;
+	color: #fff;
   font-weight: bold;
-  line-height: 2.5em;
-  width: 90%;
+}
+.contact_title_2 {
+  font-size: 1.3rem;
+	color: #fff;
+}
+
+.contact_title {
+  width: 85%;
   margin: 0 auto;
 }
 .contact_btn {
@@ -410,7 +558,7 @@ footer {
   padding: 80px 0;
 }
 .footer_warrap {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 .footer_list {
@@ -418,7 +566,7 @@ footer {
 }
 .footer_list ul {
   width: 300px;
-  margin-left: 30px;
+  margin-right: 60px;
 }
 .footer_list li {
   padding: 20px 0;
@@ -451,8 +599,8 @@ footer small{
 .button-4 {
   width: 200px;
   height: 70px;
-  border: 2px solid var(--blue1);
-  background-color: var(--blue1);
+  border: 2px solid var(--blue3);
+  background-color: var(--blue3);
   text-align: center;
   cursor: pointer;
   position: relative;
@@ -474,7 +622,7 @@ footer small{
   width: 200px;
   height: 70px;
   left: -300px;
-  background: rgb(255, 255, 255, 0.4);
+  background: #fff;
   position: absolute;
   transition: all .5s ease;
   z-index: 1;
@@ -483,13 +631,13 @@ footer small{
   left: 0;
 }
 .button-4:hover a {
-  color: var(--blue1);
+  color: var(--blue3);
 }
 /*-----------------------------*/
 .button-5 {
   width: 200px;
   height: 70px;
-  border: 2px solid var(--blue1);
+  border: 2px solid var(--blue3);
   background-color: #fff;
   text-align: center;
   cursor: pointer;
@@ -501,7 +649,7 @@ footer small{
 }
 .button-5 a {
   font-size: 16px;
-  color: var(--blue1);
+  color: var(--blue3);
   text-decoration: none;
   line-height: 65px;
   transition: all .5s ease;
@@ -513,7 +661,7 @@ footer small{
   width: 200px;
   height: 70px;
   left: -300px;
-  background-color: rgba(32, 32, 80, 0.4);
+  background-color: var(--blue3);
   position: absolute;
   transition: all .5s ease;
   z-index: 1;
@@ -524,12 +672,48 @@ footer small{
 .button-5:hover a {
   color: #fff;
 }
-
-/*--------------パンくずリスト---------------*/
-
-.breadcrumb{
-	
+/*-----------------------------*/
+.button-2 {
+  width: 300px;
+  height: 70px;
+  border: 2px solid var(--blue3);
+  background-color: var(--blue3);
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0 auto;
+	margin-top: 30px;
 }
+.button-2 a {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  line-height: 65px;
+  transition: all .5s ease;
+  z-index: 2;
+  position: relative;
+  font-weight: bold;
+}
+.eff-2 {
+  width: 300px;
+  height: 70px;
+  left: -400px;
+  background: #fff;
+  position: absolute;
+  transition: all .5s ease;
+  z-index: 1;
+}
+.button-2:hover .eff-2 {
+  left: 0;
+}
+.button-2:hover a {
+  color: var(--blue3);
+}
+
+
+/*----------------------------------------------------------*/
 
 /*--------------会社情報---------------*/
 /*--------------お問合せ---------------*/
@@ -542,7 +726,6 @@ footer small{
 .company_warrap{
 	width: 100%;
 	padding: 50px 0;
-	background-color: var(--blue2);
 }
 
 .company_table_warrap{
@@ -550,17 +733,30 @@ footer small{
 	margin: 0 auto;
 }
 
-.page_title{
-	padding: 260px 0 70px 0;
+.page_title_warrap{
+	width: 100%;
+	background-color: var(--blue2);
 	margin: 0 auto;
-	width: 80%;
+}
+
+.page_title{
+	padding: 210px 0 50px 0;
+	margin: 0 auto;
+	width: 85%;
+	
+}
+
+.page_title2{
+	padding: 100px 0 70px 0;
+	margin: 0 auto;
+	width: 85%;
 }
 
 .page_title_en{
 	
 	font-weight: bold;
 	font-size: 4em;
-	line-height: 0.7em;
+	line-height: 1.2em;
 	color: var(--blue1);
 }
 
@@ -571,8 +767,9 @@ footer small{
 
 .table_title{
 	font-weight: bold;
-	font-size: 2.0em;
+	font-size: 1.5em;
 	color: var(--blue1);
+	text-align: center;
 }
 
 .company_warrap{
@@ -587,12 +784,12 @@ footer small{
 
 .company_table ,.company_table td,.company_table th,
 .contact-form ,.contact-form td,.contact-form th{
-	border: 3px solid var(--blue2);
+	border: 0.5px solid gray;;
 	border-collapse: collapse;
 }
 
 .company_table{
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
 .company_table tr,.contact-form tr{
@@ -634,9 +831,9 @@ footer small{
 	display: inline-block;
 	background-color: red;
 	color: #fff;
-	padding: 3px 0;
+	padding: 3px 5px;
 	width: 50px;
-	margin: 5px auto;
+	margin:5px;
 }
 
 .btn-check{
@@ -658,6 +855,48 @@ textarea,
 	font: 15px/24px sans-serif;
 	width: 100%;
 	border: 0;
+}
+
+/*-------------メンバー紹介----------------*/
+
+.member{
+	/*background-color: var(--blue2);*/
+}
+
+.member_warrap{
+  width: 85%;
+  margin: 0 auto;
+	padding-bottom: 150px;
+}
+
+.ceo_text h2{
+  font-size: 2.0rem;
+}
+
+.ceo{
+  margin-bottom: 70px;
+}
+
+.ceo_img{
+  margin-right:50px;
+}
+
+.ceo_post{
+  font-size: 1.0rem;
+}
+
+.staff li{
+  margin-left: 20px;
+  text-align: center;
+}
+
+.post{
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.staff_name{
+  font-size: 1.5rem;
 }
 
 /*-------------ローディングアニメーション----------------*/
