@@ -175,7 +175,7 @@ color: var(--blue1);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;*/
-  padding: 180px 0 70px 0;
+  padding: 160px 0 70px 0;
 }
 .mainvisual_title {
   width: 90%;
@@ -246,6 +246,24 @@ color: var(--blue1);
   padding: 70px 0;
 	
 }
+
+.sec_title{
+  display: block;
+  position: relative;
+  z-index: 0;
+}
+
+.title_bg_img{
+  position: absolute;
+  z-index: -1;
+  top: -40px;
+  left: -30px;
+  opacity: .2;
+  width: 300px;
+  height: auto;
+}
+
+
 .sec_title p {
   
   font-weight: bold;
@@ -266,7 +284,6 @@ color: var(--blue1);
 .sec_text h2 {
   font-size: 2em;
   margin-bottom: 20px;
-  color: var(--blue1);
 }
 .sec_btn {
   text-align: center;
@@ -315,11 +332,16 @@ margin-top: 70px;
   margin-bottom: 20px;
 }
 
+.services_list img{
+  width: 260px;
+  height: auto;
+}
+
 /*-------------TOPミッション会社情報----------------*/
 .sec_3 {
   width: 100%;
   margin: 0 auto;
-  padding: 150px 0 100px 0;
+  padding: 150px 0 60px 0;
 	/*background-color: var(--blue2);*/
 	
 }
@@ -374,7 +396,7 @@ margin-top: 70px;
 .sec_4 {
   width: 100%;
   margin: 0 auto;
-  padding: 100px 0 300px 0;
+  padding: 100px 0 150px 0;
   
 }
 .sec_4_warrap {
@@ -448,7 +470,7 @@ margin-top: 70px;
 .sec_5 {
   width: 100%;
   margin: 0 auto;
-  padding: 100px 0 300px 0;
+  padding: 100px 0 150px 0;
 	/*background-color: var(--blue2);*/
   
 }
@@ -467,6 +489,7 @@ margin-top: 70px;
   height: 213px;
   margin-right: 20px;
   background-color: #fff;
+  padding-bottom: 200px;
 }
 .sec_5_contents ul {
   background-color: #fff;
@@ -725,13 +748,17 @@ footer small{
 
 .company_warrap{
 	width: 100%;
-	padding: 50px 0;
+	padding:70px 0 0 0;
+  
 }
 
 .company_table_warrap{
 	width: 85%;
 	margin: 0 auto;
+  
 }
+
+
 
 .page_title_warrap{
 	width: 100%;
@@ -750,6 +777,7 @@ footer small{
 	padding: 100px 0 70px 0;
 	margin: 0 auto;
 	width: 85%;
+  position: relative;
 }
 
 .page_title_en{
@@ -757,19 +785,23 @@ footer small{
 	font-weight: bold;
 	font-size: 4em;
 	line-height: 1.2em;
-	color: var(--blue1);
+	color: var(--blue3);
 }
 
 .page_title_ja{
-	color: var(--blue1);
+	color: var(--blue3);
 	
 }
 
 .table_title{
-	font-weight: bold;
 	font-size: 1.5em;
-	color: var(--blue1);
 	text-align: center;
+  margin-bottom: 15px;
+}
+
+.table_text{
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .company_warrap{
@@ -784,7 +816,7 @@ footer small{
 
 .company_table ,.company_table td,.company_table th,
 .contact-form ,.contact-form td,.contact-form th{
-	border: 0.5px solid gray;;
+	border: 0.5px solid #fff;;
 	border-collapse: collapse;
 }
 
@@ -804,21 +836,21 @@ footer small{
 }
 .company_table th,
 .contact-form th{
-	background-color: var(--blue1);
+	background-color: var(--blue3);
 	color: #fff;
 	width: 150px;
 }
 
 .company_table td,
 .contact-form td{
-	background-color: #fff;
+	background-color: var(--blue2);
 }
 
 .form_btn{
 	width: 200px;
 	padding: 20px;
 	border: none;
-	background: var(--blue1);
+	background: var(--gold);
 	color: #fff;
 	margin: 40px auto;
 	display: block;
@@ -829,7 +861,7 @@ footer small{
 .required{
 	font-size: 0.8em;
 	display: inline-block;
-	background-color: red;
+	background-color:var(--gold);
 	color: #fff;
 	padding: 3px 5px;
 	width: 50px;
