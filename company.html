@@ -18,49 +18,65 @@
 
 <body>
 <!---------------------ヘッダー------------------------->	
-	<!-- <header>
-  <div class="flex header_warrap"> <a href="index.html#" class="top_logo">LOGO</a>
+<header>
+  <div class="flex header_warrap"> <a href="index.html#" class="top_logo"><img src="img/logo.png" alt="株式会社ライジングイノベーション"></a>
     <nav>
       <ul class="flex">
-        <li class="gnavi__list"><a class="gnavi__list_a">事業案内</a>
+        <li class="gnavi__list"><a class="gnavi__list_a" href="index.html#services">サービス</a>
 		  <ul class="dropdown__lists">
                 <li class="dropdown__list"><a href="#">メニュー1</a></li>
                 <li class="dropdown__list"><a href="#">メニュー1</a></li>
                 <li class="dropdown__list"><a href="#">メニュー1</a></li>
+			  <li class="dropdown__list"><a href="#">メニュー1</a></li>
+			  <li class="dropdown__list"><a href="#">メニュー1</a></li>
             </ul>
 			
 		  </li>
-        <li><a class="gnavi__list_a" href="company.html">会社概要</a></li>
-        <li><a class="gnavi__list_a">メンバー紹介</a></li>
+      <li><a class="gnavi__list_a" href="index.html#mission">ミッション</a></li>
+        <li class="gnavi__list"><a class="gnavi__list_a" href="company.html">会社概要</a>
+        <ul class="dropdown__lists">
+          <li class="dropdown__list"><a href="company.html">会社情報</a></li>
+          <li class="dropdown__list"><a href="company.html#members">メンバー紹介</a></li>
+      </ul>
+    </li>
+    <li><a class="gnavi__list_a" href="index.html#achievements">実績</a></li>
         <li><a class="gnavi__list_a" href="contact.html">お問い合わせ</a></li>
-        <li><a class="gnavi__list_a">BLOG</a></li>
-        <li class="nav_mail"><a><img src="img/icon_mail.png"></a></li>
+        <li class="gnavi__list"><a class="gnavi__list_a" href="index.html#blog">BLOG</a>
+          <ul class="dropdown__lists">
+            <li class="dropdown__list"><a href="#">BLOG一覧</a></li>
+        </ul>
+      </li>
+        <!-- <li class="nav_mail"><a><img src="img/icon_mail.png"></a></li>  -->
       </ul>
     </nav>
+   <!---------------ヘッダーレスポンシブ------------------> 
     <div class="hamburger"><span></span><span></span><span></span></div>
   </div>
   <nav class="res_navi">
     <li><a href="#">事業案内</a></li>
+    <li><a href="#">実績</a></li>
     <li><a href="company.html">会社概要</a></li>
     <li><a href="#">メンバー紹介</a></li>
     <li><a href="contact.html">お問い合わせ</a></li>
     <li><a href="#">BLOG</a></li>
   </nav>
-</header> -->
-<!---------------------ヘッダー------------------------->	
+</header>
+<!---------------------------------------------->	
 <main>
   <section class="conpany">
 	 <div class="page_title_warrap"> 
     <div class="page_title">
       <p class="page_title_en">COMPANY</p>
-      <h2 class="page_title_ja">会社情報</h2>
+      <h2 class="page_title_ja">&emsp;会社概要</h2>
     </div>
 		</div> 
     <!---------------------会社情報------------------------->	
     <div class="company_warrap">
       <div class="company_table_warrap">
-        <!--<p class="table_title">会社情報</p>-->
-        <!--<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>-->
+        <p class="table_title">- 会社情報 -</p>
+        
+        <!-- <p class="table_text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+          テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p> -->
         <table class="company_table">
           <tr>
             <th>会社名</th>
@@ -113,9 +129,11 @@
       </div>
    
   </section>
+  <div id="members"></div><br><br><br><br><br><br><br>
  <!---------------------メンバー紹介------------------------->
- <section class="member" id="member">
+ <section class="member">
   <div class="page_title2">
+    <img src="img/title_backgroundimg.png" class="title_bg_img"> 
     <p class="page_title_en">MEMBERS</p>
     <h2 class="page_title_ja">メンバー紹介</h2>
   </div>

@@ -27,12 +27,13 @@
     <div class="configure-core"></div>
   </div> 
 </div>
-</div>	
+</div>
+<!---------------ヘッダー------------------>	
 <header>
   <div class="flex header_warrap"> <a href="index.html#" class="top_logo"><img src="img/logo.png" alt="株式会社ライジングイノベーション"></a>
     <nav>
       <ul class="flex">
-        <li class="gnavi__list"><a class="gnavi__list_a" href="index.html#sec_2">サービス</a>
+        <li class="gnavi__list"><a class="gnavi__list_a" href="index.html#services">サービス</a>
 		  <ul class="dropdown__lists">
                 <li class="dropdown__list"><a href="#">メニュー1</a></li>
                 <li class="dropdown__list"><a href="#">メニュー1</a></li>
@@ -42,18 +43,24 @@
             </ul>
 			
 		  </li>
-        <li class="gnavi__list"><a class="gnavi__list_a" href="#">ミッション</a>
+      <li><a class="gnavi__list_a" href="index.html#mission">ミッション</a></li>
+        <li class="gnavi__list"><a class="gnavi__list_a" href="company.html">会社概要</a>
         <ul class="dropdown__lists">
           <li class="dropdown__list"><a href="company.html">会社情報</a></li>
-          <li class="dropdown__list"><a href="company.html#member">メンバー紹介</a></li>
+          <li class="dropdown__list"><a href="company.html#members">メンバー紹介</a></li>
       </ul>
     </li>
-    <li><a class="gnavi__list_a" href="#">実績</a></li>
+    <li><a class="gnavi__list_a" href="index.html#achievements">実績</a></li>
         <li><a class="gnavi__list_a" href="contact.html">お問い合わせ</a></li>
-        <li><a class="gnavi__list_a">BLOG</a></li>
-        <!-- <li class="nav_mail"><a><img src="img/icon_mail.png"></a></li> -->
+        <li class="gnavi__list"><a class="gnavi__list_a" href="index.html#blog">BLOG</a>
+          <ul class="dropdown__lists">
+            <li class="dropdown__list"><a href="#">BLOG一覧</a></li>
+        </ul>
+      </li>
+        <!-- <li class="nav_mail"><a><img src="img/icon_mail.png"></a></li>  -->
       </ul>
     </nav>
+   <!---------------ヘッダーレスポンシブ------------------> 
     <div class="hamburger"><span></span><span></span><span></span></div>
   </div>
   <nav class="res_navi">
@@ -65,6 +72,7 @@
     <li><a href="#">BLOG</a></li>
   </nav>
 </header>
+<!---------------メインビジュアル------------------>	
 <div class="mainvisual">
   <div class="mainvisual_title">
     <h1><span>TEXTTEXT</span>TEXT<br>
@@ -105,27 +113,30 @@
       </ul>
     </div>
   </div>
-  <div  id="sec_2"></div>
+  <div  id="services"></div><br>
 </section>
 <!---------------事業内容------------------>
 <section class="sec_2">
   <div class="flex jcsb">
     <div class="sec_title">
+      <img src="img/title_backgroundimg.png" class="title_bg_img">  
       <p class="sec_title_1">SERVICES</p>
       <p class="sec_title_2">事業内容</p>
       <br>
       <!-- <div class="button-4">
         <div class="eff-4"></div>
         <a href="#">サービス一覧</a></div> -->
+          
     </div>
+    
     <div class="sec_text">
       <h2>TEXTTEXTTEXTTEXT<br>
         TEXTTEXTTEXTTEXTTEXTTEXT<br>
         TEXTTEXTTEXTTEXT</h2>
-      <p>TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT<br>
-        TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT<br>
-        TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT<br>
-        TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT</p>
+      <p>TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT<br>
+        TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT<br>
+        TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT<br>
+        TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT</p>
     </div>
   </div>
   
@@ -140,12 +151,15 @@
         <div class="eff-2"></div>
         <a href="#"> サービス一覧 </a> </div>
 </section>
-<div class="sec_2_img"><img src="img/insert_img.png"></div>
+<div class="sec_2_img"><img src="img/insert_img.png">
 
-<!---------------セクション3------------------>
+</div>
+<div id="mission"></div>
+<!---------------TOP会社紹介会社情報ミッション------------------>
 <section class="sec_3">
 <div class="sec_3_warrap">	
   <div class="sec_title title_sec3 fl">
+    <img src="img/title_backgroundimg.png" class="title_bg_img">
     <p class="sec_title_1">MISSION</p>
     <p class="sec_title_2">ライジングイノベーションについて</p>
     <br>
@@ -165,14 +179,17 @@
     </div>
   </div>
   <div class="clear"></div>
-</div>	
+</div>
+<div id="achievements"></div>	
 </section>
-<!---------------過去の実績------------------>
+
+<!---------------実績------------------>
 <section class="sec_4">
   <div class="sec_4_warrap">
     <div class="sec_title">
+      <img src="img/title_backgroundimg.png" class="title_bg_img">
       <p class="sec_title_1">ACHIEVEMENTS</p>
-      <p class="sec_title_2">過去の実績</p>
+      <p class="sec_title_2">実績</p>
       <!-- <p>テキストテキストテキストテキストテキストテキストテキスト</p> -->
     </div>
     <div class="flex mt_1">
@@ -198,13 +215,27 @@
           <li>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
         </ul>
       </section>
+      <section class="sec_4_contents">
+        <div class="hover-img"> <img src="img/image.png" alt=""> </div>
+        <div class="hover-text">
+          <p class="text1">TEXT</p>
+        </div>
+        <ul>
+          <li>テキストテキストテキストテキスト</li>
+          <li>テキストテキストテキストテキスト</li>
+          <li>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
+        </ul>
+      </section>
     </div>
-  </div>
+  </div>    
 </section>
+<div id="blog"></div><br><br>
+
 <!---------------ブログ------------------>
 <section class="sec_5">
   <div class="sec_5_warrap">
     <div class="sec_title">
+      <img src="img/title_backgroundimg.png" class="title_bg_img">
       <p class="sec_title_1">BLOG</p>
       <p class="sec_title_2">ブログ</p>
       <!-- <p>テキストテキストテキストテキストテキストテキストテキスト</p> -->
@@ -232,9 +263,27 @@
           <li>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
         </ul>
       </section>
+      <section class="sec_5_contents">
+        <div class="hover-img"> <img src="img/image.png" alt=""> </div>
+        <div class="hover-text">
+          <p class="text1">TEXT</p>
+        </div>
+        <ul>
+          <li>テキストテキストテキストテキスト</li>
+          <li>テキストテキストテキストテキスト</li>
+          <li>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
+        </ul>
+        
+      </section>
+     
     </div>
+    
   </div>
+  <div class="button-2">
+    <div class="eff-2"></div>
+    <a href="#"> ブログ一覧 </a> </div>
 </section>
+
 
 <!---------------コンタクト------------------>
 <section class="contact">
