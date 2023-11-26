@@ -421,10 +421,10 @@ position: relative;
 }
 
 .services_list{
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 35px;
-  row-gap: 1em;
+  row-gap: 1em; */
   flex-wrap: wrap;
   margin: 0 auto;
   margin-top:50px;
@@ -437,7 +437,7 @@ position: relative;
   
   height: auto;
   margin: 0 auto;
-  margin-right: 50px;  
+  margin-right: 30px;  
   margin-bottom: 30px;
 }
 
