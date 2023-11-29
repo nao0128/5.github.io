@@ -12,6 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
 <script src="js/jquery.inview.min.js"></script> 
 <script src="js/main.js"></script> 
 <script src="js/index.js"></script>
@@ -28,20 +29,20 @@
     </div>
   </div>
 </div>
-<!---------------ヘッダー------------------>
+<!---------------ナビゲーション------------------>
 <header>
   <div class="flex header_warrap"> <a href="index.html#" class="top_logo"><img src="img/logo.png" alt="株式会社ライジングイノベーション"></a>
     <nav>
       <ul class="flex">
-       
         <li class="gnavi__list"><a class="gnavi__list_a" href="index.html#mission">ライジングイノベーションについて</a>
           <ul class="dropdown__lists">
-			  <li class="dropdown__list"><a href="index.html#mission">ミッション</a></li>
-            <li class="dropdown__list"><a href="company.html">会社概要</a></li>
+            <li class="dropdown__list"><a href="index.html#mission">ミッション</a></li>
+            <li class="dropdown__list"><a href="index.html#services">サービス一覧</a></li>
+            <li class="dropdown__list"><a href="company.html">会社情報</a></li>
             <li class="dropdown__list"><a href="company.html#members">メンバー紹介</a></li>
           </ul>
         </li>
-		 <li class="gnavi__list"><a class="gnavi__list_a" href="index.html#services">サービス</a>
+        <li class="gnavi__list"><a class="gnavi__list_a" href="index.html#services">サービス</a>
           <ul class="dropdown__lists_3">
             <li class="dropdown__list"><a href="#">営業代行支援</a></li>
             <li class="dropdown__list"><a href="#">電話代行サービス</a></li>
@@ -49,20 +50,17 @@
             <li class="dropdown__list"><a href="#">光触媒コーティング Cutalyst+販売事業</a></li>
             <li class="dropdown__list"><a href="#">全国ストリートカフェ専門Kaffe</a></li>
           </ul>
-        </li>  
+        </li>
         <li><a class="gnavi__list_a" href="index.html#achievements">事例</a></li>
         <li><a class="gnavi__list_a" href="contact.html">お問い合わせ</a></li>
         <li class="gnavi__list"><a class="gnavi__list_a" href="index.html#blog">BLOG</a>
           <ul class="dropdown__lists_2">
-            <li class="dropdown__list"><a href="#">BLOG一覧</a></li>
+            <li class="dropdown__list"><a href="blog.html#">BLOG一覧</a></li>
           </ul>
         </li>
-         <!--<li class="nav_sns"><a></a></li>
-		 <li><a></a></li>
-		 <li><a></a></li>--> 
       </ul>
     </nav>
-    <!---------------ヘッダーレスポンシブ------------------>
+    <!---------------ナビゲーションレスポンシブ------------------>
     <div class="hamburger"><span></span><span></span><span></span></div>
   </div>
   <nav class="res_navi">
@@ -72,34 +70,35 @@
     <li><a href="#">メンバー紹介</a></li>
     <li><a href="contact.html">お問い合わせ</a></li>
     <li><a href="#">BLOG</a></li>
-	<li class="nav_sns"><a href="#"></a></li>
-	<li><a href="#"></a></li>  
+    <li class="nav_sns"><a href="#"></a></li>
+    <li><a href="#"></a></li>
   </nav>
 </header>
 <!---------------メインビジュアル------------------>
 <div class="mainvisual">
   <div class="main_bg"></div>
   <div class="mainvisual_warrap">
-    <div class="mainvisual_title"> <br>
-      <br>
-      <p class="mainvisual_text1">営業代行支援</p>
-      <h1 class="mainvisual_text3">人と未来をツナグ<br>
-        セールスイノベーション</h1>
-      <br>
-      <p class="mainvisual_text2">アウトバウンド営業に特化した我々が本気で挑む事は、<br>
-        「革新」的なイノベーションです。<br>
-        成果の出ない営業活動は営業ではありません。<br>
-        最短最速で「成果」にコミットする事をお約束し、<br>
-        クライアントとの皆様と伴走しながら<br>
-        サービスのスケールをご支援させて頂きます。</p>
-      <br>
-      <div class="flex">
-        <div class="button-4">
-          <div class="eff-4"></div>
-          <a href="contact.html">営業のご相談(無料)</a> </div>
-        <div class="button-5">
-          <div class="eff-5"></div>
-          <a href="contact.html">サービス資料(無料)</a> </div>
+    <div class="mainvisual_title">
+      <div class="mainvisual_text_wrap">
+        <p class="mainvisual_text1">営業代行支援</p>
+        <h1 class="mainvisual_text3">人と未来をツナグ<br>
+          セールスイノベーション</h1>
+        <br>
+        <p class="mainvisual_text2">アウトバウンド営業に特化した我々が本気で挑む事は、<br>
+          「革新」的なイノベーションです。<br>
+          成果の出ない営業活動は営業ではありません。<br>
+          最短最速で「成果」にコミットする事をお約束し、<br>
+          クライアントとの皆様と伴走しながら<br>
+          サービスのスケールをご支援させて頂きます。</p>
+        <br>
+        <div class="flex jcc">
+          <div class="button-4">
+            <div class="eff-4"></div>
+            <a href="contact.html">営業のご相談(無料)</a> </div>
+          <div class="button-5">
+            <div class="eff-5"></div>
+            <a href="contact.html">サービス資料(無料)</a> </div>
+        </div>
       </div>
     </div>
     <img src="img/logo6.png" class="logo2"> </div>
@@ -115,7 +114,6 @@
         <li class="scroll-infinity__item"><img src="img/logo/4.png" /></li>
         <li class="scroll-infinity__item"><img src="img/logo/10.png" /></li>
         <li class="scroll-infinity__item"><img src="img/logo/11.webp" /></li>
-        
       </ul>
       <ul class="scroll-infinity__list scroll-infinity__list--left">
         <li class="scroll-infinity__item"><img src="img/logo/13.png" /></li>
@@ -123,7 +121,6 @@
         <li class="scroll-infinity__item"><img src="img/logo/17.png" /></li>
         <li class="scroll-infinity__item"><img src="img/logo/22.png" /></li>
         <li class="scroll-infinity__item"><img src="img/logo/10.png" /></li>
-        
         <li class="scroll-infinity__item"><img src="img/logo/21.png" /></li>
       </ul>
     </div>
@@ -216,6 +213,7 @@
         TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT</p>
     </div>
   </div>-->
+<div id="services"></div>
 <section class="sec_2">
   <p class="services_list_title">OURS SERVICES<br>
     <span>サービス一覧</span></p>
@@ -265,32 +263,32 @@
       <p class="sec_title_2">事例</p>
       <!-- <p>テキストテキストテキストテキストテキストテキストテキスト</p> --> 
     </div>
-	   <ul class="flex">
+    <ul class="flex">
       <li class="achievements_list">
-		<dl>
-		<dt><img src="img/image.png"></dt>
-		  <dd>テキストテキスト</dd>
-			<dd class="achievements_list_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
-		</dl>
-		</li>
-		<li class="achievements_list">
-		<dl>
-		<dt><img src="img/image.png"></dt>
-		  <dd>テキストテキスト</dd>
-			<dd class="achievements_list_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
-		</dl>
-		</li>
-		<li class="achievements_list">
-		<dl>
-		<dt><img src="img/image.png"></dt>
-		  <dd>テキストテキスト</dd>
-			<dd class="achievements_list_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
-		</dl>
-		</li>  
-		</ul>
+        <dl>
+          <dt><img src="img/image.png"></dt>
+          <dd>テキストテキスト</dd>
+          <dd class="achievements_list_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+        </dl>
+      </li>
+      <li class="achievements_list">
+        <dl>
+          <dt><img src="img/image.png"></dt>
+          <dd>テキストテキスト</dd>
+          <dd class="achievements_list_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+        </dl>
+      </li>
+      <li class="achievements_list">
+        <dl>
+          <dt><img src="img/image.png"></dt>
+          <dd>テキストテキスト</dd>
+          <dd class="achievements_list_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+        </dl>
+      </li>
+    </ul>
   </div>
+  <div id="blog"></div>
 </section>
-<div id="blog"></div>
 
 <!---------------ブログ------------------>
 <section class="sec_5">
@@ -298,34 +296,33 @@
     <div class="sec_title"> <img src="img/title_backgroundimg.png" class="title_bg_img">
       <p class="sec_title_1">BLOG</p>
       <p class="sec_title_2">ブログ</p>
-			
     </div>
-	  <ul class="flex">
+    <ul class="flex">
       <li class="blog_list">
-		<dl>
-		<dt><img src="img/image.png"></dt>
-		  <dd>テキストテキスト</dd>
-		</dl>
-		</li>
-		<li class="blog_list">
-		<dl>
-		<dt><img src="img/image.png"></dt>
-		  <dd>テキストテキスト</dd>
-		</dl>
-		</li>
-		<li class="blog_list">
-		<dl>
-		<dt><img src="img/image.png"></dt>
-		  <dd>テキストテキスト</dd>
-		</dl>
-		</li>  
-		</ul>
+        <dl>
+          <dt><img src="img/image.png"></dt>
+          <dd>テキストテキスト</dd>
+        </dl>
+      </li>
+      <li class="blog_list">
+        <dl>
+          <dt><img src="img/image.png"></dt>
+          <dd>テキストテキスト</dd>
+        </dl>
+      </li>
+      <li class="blog_list">
+        <dl>
+          <dt><img src="img/image.png"></dt>
+          <dd>テキストテキスト</dd>
+        </dl>
+      </li>
+    </ul>
   </div>
   <br>
-<br>	
+  <br>
   <div class="button-2">
     <div class="eff-2"></div>
-    <a href="#"> ブログ一覧 </a> </div>
+    <a href="blog.html#"> ブログ一覧 </a> </div>
 </section>
 
 <!---------------コンタクト------------------>
@@ -353,16 +350,34 @@
     </div>
     <div class="flex footer_list">
       <ul>
-        <li><a>事業案内<img src="img/icon_arrow.png" class="arrow"></a></li>
-        <li><a href="company.html">会社概要<img src="img/icon_arrow.png" class="arrow"></a></li>
-        <li><a>メンバー紹介<img src="img/icon_arrow.png" class="arrow"></a></li>
+        <li><a href="index.html#mission">サービス一覧<img src="img/icon_arrow.png" class="arrow"></a></li>
+        <li><a href="company.html#">会社概要<img src="img/icon_arrow.png" class="arrow"></a></li>
       </ul>
       <ul>
-        <li><a href="contact.html">お問い合わせ<img src="img/icon_arrow.png" class="arrow"></a></li>
-        <li><a>BLOG<img src="img/icon_arrow.png" class="arrow"></a></li>
+        <li><a href="contact.html#">お問い合わせ<img src="img/icon_arrow.png" class="arrow"></a></li>
       </ul>
     </div>
   </div>
   <small>Coryright(C) RISING INNOVATION Co., Ltd All Rights Reserced.</small> </footer>
+<!--
+-------------TOPにもどるボタン----------------	
+-->
+<p class="pagetop"><a href="#wrap"><img src="img/icon_arrow_2.png"></a></p>
+<script>
+$(document).ready(function() {
+  var pagetop = $('.pagetop');
+    $(window).scroll(function () {
+       if ($(this).scrollTop() > 100) {
+            pagetop.fadeIn();
+       } else {
+            pagetop.fadeOut();
+            }
+       });
+       pagetop.click(function () {
+           $('body, html').animate({ scrollTop: 0 }, 500);
+              return false;
+   });
+});
+</script>
 </body>
 </html>
