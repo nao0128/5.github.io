@@ -2,20 +2,22 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">	
 <title>株式会社RISING INNOVATION – 株式会社RISING INNOVATION は人と未来をツナグ会社です。</title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/responsive.css" media="screen and (max-width:933px)">
+<link rel="shortcut icon" href="img/logo.png">	
+<link href="css/style.css" rel="stylesheet" type="text/css" media="screen and (min-width:1024px)">
+<link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen and (max-width:1023px)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">	
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
 <script src="js/jquery.inview.min.js"></script> 
 <script src="js/main.js"></script> 
-<script src="js/index.js"></script>
 </head>
 
 <body>
@@ -31,8 +33,8 @@
 </div>
 <!---------------ナビゲーション------------------>
 <header>
-  <div class="flex header_warrap"> <a href="index.html#" class="top_logo"><img src="img/logo.png" alt="株式会社ライジングイノベーション"></a>
-    <nav>
+  <div class="flex header_wrap"> <a href="index.html#" class="top_logo"><img src="img/logo.png" alt="株式会社ライジングイノベーション"></a>
+    <nav class="main_navigation">
       <ul class="flex">
         <li class="gnavi__list"><a class="gnavi__list_a" href="index.html#mission">ライジングイノベーションについて</a>
           <ul class="dropdown__lists">
@@ -61,23 +63,60 @@
       </ul>
     </nav>
     <!---------------ナビゲーションレスポンシブ------------------>
-    <div class="hamburger"><span></span><span></span><span></span></div>
-  </div>
-  <nav class="res_navi">
-    <li><a href="#">事業案内</a></li>
-    <li><a href="#">実績</a></li>
-    <li><a href="company.html">会社概要</a></li>
-    <li><a href="#">メンバー紹介</a></li>
-    <li><a href="contact.html">お問い合わせ</a></li>
-    <li><a href="#">BLOG</a></li>
-    <li class="nav_sns"><a href="#"></a></li>
-    <li><a href="#"></a></li>
-  </nav>
+<nav class="res_nav">
+			<ul class="nav-menu">
+				<li>
+					<a href=""></a>
+				</li>
+				<li id="toolTitle">
+					<a href=""></a>
+				</li>
+				<li style="list-style: none; display: inline">
+					<div class="toolContent" id="menuFile">
+						<ul class="sub-nav">
+							<li>
+								<a href="">作品一覧</a>
+							</li>
+							<li>
+								<a href="">実務実績 -1-</a>
+							</li>
+							<li>
+								<a href="">実務実績 -2-</a>
+							</li>
+							<li>
+								<a href="">ポートフォリオ -1-</a>
+							</li>
+							<li>
+								<a href="">ポートフォリオ -2-</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="">BANNER WORKS</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="toggle_btn">
+			<span></span> <span></span> <span></span>
+		</div>
+		<div class="mask"></div>
+	</header>
+	<script type="application/javascript">
+	   $('#menuFile').hide();
+	   $('#toolTitle').on('click',function(){
+	       if ($('#menuFile').css('display')==='none'){
+	       $('#menuFile').slideDown(); 
+	       }else{
+	           $('#menuFile').slideUp();
+	       }
+	   }); 
+	</script>	  
 </header>
 <!---------------メインビジュアル------------------>
 <div class="mainvisual">
   <div class="main_bg"></div>
-  <div class="mainvisual_warrap">
+  <div class="mainvisual_wrap">
     <div class="mainvisual_title">
       <div class="mainvisual_text_wrap">
         <p class="mainvisual_text1">営業代行支援</p>
@@ -133,7 +172,6 @@
         <li class="scroll-infinity__item"><img src="img/logo/14.png" /></li>
         <li class="scroll-infinity__item"><img src="img/logo/16.png" /></li>
         <li class="scroll-infinity__item"><img src="img/logo/19.png" /></li>
-        <!-- <li class="scroll-infinity__item"><img src="img/logo/26.jpg" /></li> -->
         <li class="scroll-infinity__item"><img src="img/logo/23.png" /></li>
         <li class="scroll-infinity__item"><img src="img/logo/14.png" /></li>
       </ul>
@@ -144,7 +182,6 @@
         <li class="scroll-infinity__item"><img src="img/logo/24.png" /></li>
         <li class="scroll-infinity__item"><img src="img/logo/23.png" /></li>
         <li class="scroll-infinity__item"><img src="img/logo/16.png" /></li>
-        <!-- <li class="scroll-infinity__item"><img src="img/logo/26.jpg" /></li> -->
       </ul>
     </div>
   </div>
@@ -170,11 +207,11 @@
     </div>
   </div>
 </section>
-<div  id="mission"></div>
+<div id="mission"></div>
 <!---------------TOP会社紹介会社情報ミッション------------------>
 <div id="mission"></div>
 <section class="sec_3">
-  <div class="sec_3_warrap flex">
+  <div class="sec_3_wrap">
     <div class="sec_title title_sec3"> <img src="img/title_backgroundimg.png" class="title_bg_img">
       <p class="sec_title_1">MISSION</p>
       <p class="sec_title_2">ライジングイノベーションについて</p>
@@ -194,60 +231,51 @@
     <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
   </div>
 </section>
-<!--<div class="sec_2_warrap flex jcsb">
-    <div class="sec_title">
-      <img src="img/title_backgroundimg.png" class="title_bg_img">  
-      <p class="sec_title_1">SERVICES</p>
-      <p class="sec_title_2">事業内容</p>
-      <br>
-          
-    </div>
-    
-    <div class="sec_text">
-      <h2>TEXTTEXTTEXTTEXT<br>
-        TEXTTEXTTEXTTEXTTEXTTEXT<br>
-        TEXTTEXTTEXTTEXT</h2>
-      <p>TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT<br>
-        TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT<br>
-        TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT<br>
-        TEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXTTEXT</p>
-    </div>
-  </div>-->
 <div id="services"></div>
 <section class="sec_2">
   <p class="services_list_title">OURS SERVICES<br>
     <span>サービス一覧</span></p>
-  <ul class="services_list flex jcc">
-    <li><a href=""><img src="img/bunner1.png" />
+  <ul class="services_list">
+    <li>
       <dl>
+		  <dt><img src="img/bunner1.png" /></dt>
         <dt>営業代行支援</dt>
         <dd> 予算・目的・営業マネジメントを1社ごと企業に合った最適なプランをご提案。リード獲得からクロージングまで全て一貫してクライアント様の強いセールスチームとしてご支援いたします。</dd>
+		<dd class="services_list_detail"><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>詳細はコチラ</a></dd>  
       </dl>
-      </a></li>
-    <li><a href=""><img src="img/bunner2.png" />
+      </li>
+    <li>
       <dl>
+		  <dt><img src="img/bunner2.png" /></dt>
         <dt>電話代行サービス</dt>
         <dd> 豊富な実績とノウハウで顧客をがっちり掴み取る業界トップレベルの電話代行サービス。電話対応の業務を大幅に削減し、業務効率をアップさせることで貴社のビジネスチャンスを拡大させます。</dd>
+		  <dd class="services_list_detail"><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>詳細はコチラ</a></dd>
       </dl>
-      </a></li>
-    <li><a href=""><img src="img/bunner3.png" />
+      </li>
+    <li>
       <dl>
+		  <dt><img src="img/bunner3.png" /></dt>
         <dt>トークスクリプト構築・作成代行</dt>
         <dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+		 <dd class="services_list_detail"><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>詳細はコチラ</a></dd>  
       </dl>
-      </a></li>
-    <li><a href=""><img src="img/bunner4.png" />
+      </li>
+    <li>
       <dl>
+		  <dt><img src="img/bunner4.png" /></dt>
         <dt>光触媒コーティング Cutalyst+販売事業</dt>
         <dd> 世界初の特許出願技術Cutalyst+シリーズ（カタリスト ）を使⽤した光触媒コーティング事業を全国で展開し加盟店総数70社突破。</dd>
+		<dd class="services_list_detail"><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>詳細はコチラ</a></dd>  
       </dl>
-      </a></li>
-    <li><a href=""><img src="img/bunner5.png" />
+      </li>
+    <li>
       <dl>
+		 <dt><img src="img/bunner5.png" /></dt>
         <dt>全国ストリートカフェ専門Kaffe</dt>
         <dd> 全国のあらゆるカフェの情報をまとめた専門ポータルサイト。美味しいスイーツやおしゃれなカフェなど様々な情報を随時発信しています。</dd>
+		  <dd class="services_list_detail"><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>詳細はコチラ</a></dd>
       </dl>
-      </a></li>
+      </li>
   </ul>
   <!-- <div class="button-2">
         <div class="eff-2"></div>
@@ -257,13 +285,13 @@
 <div id="achievements"></div>
 <!---------------実績------------------>
 <section class="sec_4">
-  <div class="sec_4_warrap">
+  <div class="sec_4_wrap">
     <div class="sec_title"> <img src="img/title_backgroundimg.png" class="title_bg_img">
       <p class="sec_title_1">ACHIEVEMENTS</p>
       <p class="sec_title_2">事例</p>
       <!-- <p>テキストテキストテキストテキストテキストテキストテキスト</p> --> 
     </div>
-    <ul class="flex">
+    <ul class="achievements_list_flex">
       <li class="achievements_list">
         <dl>
           <dt><img src="img/image.png"></dt>
@@ -292,12 +320,13 @@
 
 <!---------------ブログ------------------>
 <section class="sec_5">
-  <div class="sec_5_warrap">
+  <div class="sec_5_wrap">
     <div class="sec_title"> <img src="img/title_backgroundimg.png" class="title_bg_img">
       <p class="sec_title_1">BLOG</p>
       <p class="sec_title_2">ブログ</p>
     </div>
-    <ul class="flex">
+	<div class="blog_list_wrap">  
+    <ul class="blog_list_flex">
       <li class="blog_list">
         <dl>
           <dt><img src="img/image.png"></dt>
@@ -323,6 +352,7 @@
   <div class="button-2">
     <div class="eff-2"></div>
     <a href="blog.html#"> ブログ一覧 </a> </div>
+</div>	  
 </section>
 
 <!---------------コンタクト------------------>
@@ -339,10 +369,10 @@
 
 <!---------------フッター------------------>
 <footer>
-  <div class="flex jcsb footer_warrap">
+  <div class="footer_wrap">
     <div class="footer_logo"> <a href="#"><img src="img/logo.png" alt=""></a>
       <ul class="addres">
-        <li>株式会社RISING INNOVATION</li>
+        <li><strong>株式会社RISING INNOVATION</strong></li>
         <li>〒531-0072</li>
         <li>大阪市北区豊崎3-15-5 TKビル2F</li>
         <li>TEL：050-7586-3360</li>
