@@ -273,6 +273,12 @@ header {
   font-size: 1.5rem;
   color: var(--blue3);
 }
+
+.sec_title_4{
+  width: 81%;
+  margin: 0 auto;
+}
+
 .sec_text p {
   line-height: 2.0em;
 }

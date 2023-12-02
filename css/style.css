@@ -89,8 +89,12 @@ header {
   position: relative;
   display: inline-block;
   height: 97px;
+}
+
+.gnavi__list_a{
   color: var(--blue1);
 }
+
 .gnavi__list_a::after {
   position: absolute;
   left: 0;
@@ -121,7 +125,7 @@ header {
 	display: none;
 }
 
-/*-------------ドロップダウンリスト----------------*/
+/*-------------グローバルナビゲーション----------------*/
 .gnavi__list {
   position: relative;
 }
@@ -133,7 +137,6 @@ header {
   position: absolute;
   top: 80px;
   right: 170px;
-  
   margin: auto;
   transition: 0.3s;
 }
@@ -171,6 +174,14 @@ header {
   opacity: 1;
   display: block;
 }
+
+.dropdown__list a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding-top: 13px;
+}
+
 .dropdown__list {
   background-color: var(--blue3);
   width: 400px;
@@ -191,12 +202,7 @@ header {
 .dropdown__list:hover {
   background-color: #fff;
 }
-.dropdown__list a {
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  padding-top: 13px;
-}
+
 .dropdown__list a:hover {
   color: var(--blue1);
   opacity: 1;
@@ -296,9 +302,10 @@ header {
 
 .loop_wrap {
   display: flex;
-  width: 100vw;
+  width: 200%;
   height: 90px;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .loop_wrap img {
@@ -323,21 +330,13 @@ header {
   }
 }
 
-@keyframes loop-list {
-  from {
-      transform: translateX(0);
-  }
-  to {
-      transform: translateX(-100%);
-  }
-}
 
 .loop_wrap img:first-child {
-  animation: loop 50s -25s linear infinite;
+  animation: loop 70s -35s linear infinite;
 }
 
 .loop_wrap img:last-child {
-  animation: loop2 50s linear infinite;
+  animation: loop2 70s linear infinite;
 }
 
 /*-------------TOPサービス事業内容----------------*/
@@ -388,7 +387,7 @@ header {
 }
 
 .sec_title_4{
-  width: 91%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -454,7 +453,6 @@ header {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: -10px;
   row-gap: 1em;
   flex-wrap: wrap;
   margin: 0 auto;
