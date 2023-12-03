@@ -302,7 +302,7 @@ header {
 
 .loop_wrap {
   display: flex;
-  width: 300%;
+  width: 200%;
   height: 90px;
   overflow: hidden;
   margin: 0 auto;
@@ -801,6 +801,48 @@ footer small {
   color: #fff;
 }
 /*-----------------------------*/
+.contact_btn {
+  width: 250px;
+  height: 70px;
+  border: 2px solid var(--blue3);
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 0;
+  margin: 0;
+}
+.contact_btn a {
+  font-size: 16px;
+  color: var(--blue3);
+  text-decoration: none;
+  line-height: 65px;
+  transition: all .5s ease;
+  z-index: 2;
+  position: relative;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+.eff-contact {
+  width: 250px;
+  height: 70px;
+  left: -250px;
+  background-color: var(--blue1);
+  position: absolute;
+  transition: all .5s ease;
+  z-index: 1;
+}
+.contact_btn:hover .eff-contact {
+  left: 0;
+}
+.contact_btn:hover a {
+  color: #fff;
+}
+
+
+/*-----------------------------*/
 .button-2 {
   width: 300px;
   height: 70px;
@@ -892,7 +934,8 @@ footer small {
 }
 .contact-form {
   width: 85%;
-  margin: 50px auto;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .company_table{
@@ -975,6 +1018,30 @@ textarea, .contact-form input[type='text'], .contact-form input[type='email'], .
   width: 400px;
   border: 1;
 }
+/*-------------ダウンロードページ----------------*/
+.download_wrap{
+  padding:70px 0;
+}
+
+.download_img{
+  margin: 0 auto;
+  display: block;
+  width: 600px;
+  height: 300px;
+  border: solid #000 1px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.download_img img{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 /*-------------メンバー紹介----------------*/
 
 .member_wrap {

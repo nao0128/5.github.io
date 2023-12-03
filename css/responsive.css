@@ -560,8 +560,8 @@ header {
 .contact_title {
   width: 85%;
   margin: 0 auto;
+text-align: center;
 }
-
 .contact_btn{
 	margin: 0 auto;
 }
@@ -694,6 +694,48 @@ footer small {
 .button-5:hover a {
   color: #fff;
 }
+/*-----------------------------*/
+
+.contact_btn {
+  width: 250px;
+  height: 70px;
+  border: 2px solid var(--blue3);
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 0;
+}
+.contact_btn a {
+  font-size: 16px;
+  color: var(--blue3);
+  text-decoration: none;
+  line-height: 65px;
+  transition: all .5s ease;
+  z-index: 2;
+  position: relative;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+.eff-contact {
+  width: 250px;
+  height: 70px;
+  left: -250px;
+  background-color: var(--blue1);
+  position: absolute;
+  transition: all .5s ease;
+  z-index: 1;
+}
+.contact_btn:hover .eff-contact {
+  left: 0;
+}
+.contact_btn:hover a {
+  color: #fff;
+}
+
+
 /*-----------------------------*/
 .button-2 {
   width: 300px;
