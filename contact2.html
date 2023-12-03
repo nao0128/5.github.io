@@ -32,6 +32,9 @@
     <div class="company_warrap">
       <div class="company_table_warrap">
         <!--<p class="table_title">お問合せ</p>-->
+        
+        <div class="download_wrap">  
+          <div class="download_img"><img src="img/image.png"></div></div>
         <form action= "<!--<?php echo esc_url( get_home_url() ); ?>/contactdone/-->" method="post">
           <table class="contact-form">
             <tr class="inquiry">
@@ -77,7 +80,7 @@
           </table>
           
           <p class="btn-check"><input type="checkbox" name="acceptance" value="1" aria-invalid="false" class="spam1" required/>&emsp;<a href=""><u>規約</u></a>に同意し、チェックを入れてください。<br />
-          <input type="submit" value="送信する" class="form_btn" id="formbtn" />
+          <input type="submit" value="ダウンロード画面へ" class="form_btn" id="formbtn"  onclick="location.href='bownload.html'" />
           </p>
         </form>
       </div>
