@@ -20,7 +20,7 @@
 <script src="js/main.js"></script> 
 </head>
 
-<body>
+<body class="fade-box">
 <div class="loding">
   <div class="spinner-box">
     <div class="configure-border-1">
@@ -68,55 +68,21 @@
       </ul>
     </nav>
     <!---------------ナビゲーションレスポンシブ------------------>
-<nav class="res_nav">
-			<ul class="nav-menu">
-				<li>
-					<a href=""></a>
-				</li>
-				<li id="toolTitle">
-					<a href=""></a>
-				</li>
-				<li style="list-style: none; display: inline">
-					<div class="toolContent" id="menuFile">
-						<ul class="sub-nav">
-							<li>
-								<a href="">作品一覧</a>
-							</li>
-							<li>
-								<a href="">実務実績 -1-</a>
-							</li>
-							<li>
-								<a href="">実務実績 -2-</a>
-							</li>
-							<li>
-								<a href="">ポートフォリオ -1-</a>
-							</li>
-							<li>
-								<a href="">ポートフォリオ -2-</a>
-							</li>
-						</ul>
-					</div>
-				</li>
-				<li>
-					<a href="">BANNER WORKS</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="toggle_btn">
-			<span></span> <span></span> <span></span>
-		</div>
-		<div class="mask"></div>
-	</header>
-	<script type="application/javascript">
-	   $('#menuFile').hide();
-	   $('#toolTitle').on('click',function(){
-	       if ($('#menuFile').css('display')==='none'){
-	       $('#menuFile').slideDown(); 
-	       }else{
-	           $('#menuFile').slideUp();
-	       }
-	   }); 
-	</script>	  
+<span class="nav_toggle">
+  <i></i>
+  <i></i>
+  <i></i>
+</span>
+<nav class="nav">
+  <ul class="nav_menu_ul">
+    <li class="nav_menu_li"><a href="index.html#mission">会社について</a></li>
+    <li class="nav_menu_li"><a href="index.html#services">サービス一覧</a></li>
+    
+	<li class="nav_menu_li"><a href="contact2.html#">サービス資料</a></li> 
+	  <li class="nav_menu_li"><a href="contact.html#">お問い合わせ</a></li>
+    <li class="nav_menu_li"><a href="blog.html#">BLOG</a></li>
+  </ul>
+</nav>  
 </header>
 <!---------------メインビジュアル------------------>
 <div class="mainvisual">
@@ -197,12 +163,13 @@
         <li class="scroll-infinity__item"><img src="img/logo/11.webp" /></li>
       </ul>
     </div> -->
+	<div id="mission"></div>
 </section>
-<div id="mission"></div>
+
 <!---------------TOP会社紹介会社情報ミッション------------------>
 <div id="mission"></div>
-<section class="sec_3">
-  <div class="sec_3_wrap">
+<section class="sec_3 inview">
+  <div class="sec_3_wrap ">
     <div class="sec_title title_sec3"> <img src="img/title_backgroundimg.png" class="title_bg_img">
       <p class="sec_title_1">MISSION</p>
       <p class="sec_title_2">会社について</p>
@@ -217,14 +184,15 @@
       </div>
     </div>
   </div>
-  <div class="sec_3_text">
+  <div class="sec_3_text inview2">
     <h3>テキストテキスト</h3>
     <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
   </div>
   <div id="services"></div>
 </section>
 
-<section class="sec_2">
+<section class="sec_2 inview">
+	<div class="sec_2_wrap">
   <div class="sec_title sec_title_4"> <img src="img/title_backgroundimg.png" class="title_bg_img">
     <p class="sec_title_1">SERVICES</p>
     <p class="sec_title_2">サービス一覧</p>
@@ -235,25 +203,25 @@
     <li>
       <dl>
 		  <dt><img src="img/bunner1.png" /></dt>
-        <dt>営業代行支援</dt>
-        <dd> 予算・目的・営業マネジメントを1社ごと企業に合った最適なプランをご提案。リード獲得からクロージングまで全て一貫してクライアント様の強いセールスチームとしてご支援いたします。</dd>
-		<dd class="services_list_detail"><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>詳細はコチラ</a></dd>  
+        <dt class="inview2">営業代行支援</dt>
+        <dd class="inview2"> 予算・目的・営業マネジメントを1社ごと企業に合った最適なプランをご提案。リード獲得からクロージングまで全て一貫してクライアント様の強いセールスチームとしてご支援いたします。</dd>
+		<dd class="services_list_detail inview2"><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>詳細はコチラ</a></dd>  
       </dl>
       </li>
     <li>
       <dl>
 		  <dt><img src="img/bunner2.png" /></dt>
-        <dt>電話代行サービス</dt>
-        <dd> 豊富な実績とノウハウで顧客をがっちり掴み取る業界トップレベルの電話代行サービス。電話対応の業務を大幅に削減し、業務効率をアップさせることで貴社のビジネスチャンスを拡大させます。</dd>
-		  <dd class="services_list_detail"><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>詳細はコチラ</a></dd>
+        <dt class="inview2">電話代行サービス</dt>
+        <dd class="inview2"> 豊富な実績とノウハウで顧客をがっちり掴み取る業界トップレベルの電話代行サービス。電話対応の業務を大幅に削減し、業務効率をアップさせることで貴社のビジネスチャンスを拡大させます。</dd>
+		  <dd class="services_list_detail inview2"><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>詳細はコチラ</a></dd>
       </dl>
       </li>
     <li>
       <dl>
 		  <dt><img src="img/bunner3.png" /></dt>
-        <dt>トークスクリプト構築・作成代行</dt>
-        <dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
-		 <dd class="services_list_detail"><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>詳細はコチラ</a></dd>  
+        <dt class="inview2">トークスクリプト構築・作成代行</dt>
+        <dd class="inview2">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+		 <dd class="services_list_detail inview2"><a href=""><span><img src="img/icon_arrow2.png" class="arrow"></span>詳細はコチラ</a></dd>  
       </dl>
       </li>
     
@@ -261,19 +229,20 @@
   </ul>
   <!-- <div class="button-2">
         <div class="eff-2"></div>
-        <a href="#"> サービス一覧 </a> </div> --> 
+        <a href="#"> サービス一覧 </a> </div> -->
+		</div>
 </section>
 <div class="sec_2_img"><img src="img/insert_img.png"> </div>
 <div id="achievements"></div>
 <!---------------実績------------------>
-<section class="sec_4">
+<section class="sec_4 inview">
   <div class="sec_4_wrap">
     <div class="sec_title"> <img src="img/title_backgroundimg.png" class="title_bg_img">
       <p class="sec_title_1">ACHIEVEMENTS</p>
       <p class="sec_title_2">事例</p>
       <!-- <p>テキストテキストテキストテキストテキストテキストテキスト</p> --> 
     </div>
-    <ul class="achievements_list_flex">
+    <ul class="achievements_list_flex inview2">
       <li class="achievements_list">
         <dl>
           <dt><img src="img/image.png"></dt>
@@ -301,14 +270,14 @@
 </section>
 
 <!---------------ブログ------------------>
-<section class="sec_5">
+<section class="sec_5 inview">
   <div class="sec_5_wrap">
     <div class="sec_title"> <img src="img/title_backgroundimg.png" class="title_bg_img">
       <p class="sec_title_1">BLOG</p>
       <p class="sec_title_2">ブログ</p>
     </div>
 	<div class="blog_list_wrap">  
-    <ul class="blog_list_flex">
+    <ul class="blog_list_flex inview2">
       <li class="blog_list">
         <dl>
           <dt><img src="img/image.png"></dt>
@@ -362,11 +331,12 @@
     </div>
     <div class="flex footer_list">
       <ul>
-        <li><a href="index.html#mission">サービス一覧<img src="img/icon_arrow.png" class="arrow"></a></li>
+        <li><a href="index.html#services">サービス一覧<img src="img/icon_arrow.png" class="arrow"></a></li>
         <li><a href="company.html#">会社概要<img src="img/icon_arrow.png" class="arrow"></a></li>
       </ul>
       <ul>
         <li><a href="contact.html#">お問い合わせ<img src="img/icon_arrow.png" class="arrow"></a></li>
+		   <li><a href="contact2.html#">サービス資料<img src="img/icon_arrow.png" class="arrow"></a></li>
       </ul>
     </div>
   </div>
